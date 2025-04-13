@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kávé Szervíz - Automata kávégépek</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Alap táblázat-stílus a jobb megjelenéshez */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #555;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigáció -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Kezdőlap</a></li>
+        <li><a href="receptek.html">Kávé receptek</a></li>
+        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+        <li><a href="galeria.html">Galéria</a></li>
+        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Fő tartalom -->
+  <main>
+    <h1>Automata kávégépek technikai jellemzői</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Márka</th>
+          <th>Modell</th>
+          <th>Géptípus</th>
+          <th>Teljesítmény</th>
+          <th>Nyomás</th>
+          <th>Vezérlő Felület / Működtetés</th>
+          <th>Kiegészítő Funkciók</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 1. Bosch -->
+        <tr>
+          <td>Bosch</td>
+          <td>Tassimo</td>
+          <td>Automata</td>
+          <td>950W</td>
+          <td>14 bar</td>
+          <td>Egyedi kapszulák</td>
+          <td>Gyors főzés</td>
+        </tr>
+        <!-- 2. Breville -->
+        <tr>
+          <td>Breville</td>
+          <td>Barista Express</td>
+          <td>Fél-automata</td>
+          <td>1100W</td>
+          <td>15 bar</td>
+          <td>Integrált molinó</td>
+          <td>PID vezérlés</td>
+        </tr>
+        <!-- 3. DeLonghi -->
+        <tr>
+          <td>DeLonghi</td>
+          <td>Magnifica S</td>
+          <td>Automata</td>
+          <td>1000W</td>
+          <td>15 bar</td>
+          <td>Kávé- és tejfőzés</td>
+          <td>Modern dizájn</td>
+        </tr>
+        <!-- 4. ECM -->
+        <tr>
+          <td>ECM</td>
+          <td>Synchronika</td>
+          <td>Automata</td>
+          <td>1300W</td>
+          <td>15 bar</td>
+          <td>Remek extrakció</td>
+          <td>Kettős gőzölő</td>
+        </tr>
+        <!-- 5. Elektra -->
+        <tr>
+          <td>Elektra</td>
+          <td>Sixties</td>
+          <td>Automata</td>
+          <td>1250W</td>
+          <td>15 bar</td>
+          <td>Retro modern</td>
+          <td>Testreszabható üzemmódok</td>
+        </tr>
+        <!-- 6. Expobar -->
+        <tr>
+          <td>Expobar</td>
+          <td>Office Pro</td>
+          <td>Automata</td>
+          <td>1100W</td>
+          <td>15 bar</td>
+          <td>Késleltetett indítás</td>
+          <td>Könnyen kezelhető</td>
+        </tr>
+        <!-- 7. Faema -->
+        <tr>
+          <td>Faema</td>
+          <td>E71E</td>
+          <td>Profi</td>
+          <td>1400W</td>
+          <td>15 bar</td>
+          <td>Kereskedelmi szint</td>
+          <td>Dupla sütési rendszer</td>
+        </tr>
+        <!-- 8. Gaggia -->
+        <tr>
+          <td>Gaggia</td>
+          <td>Classic Pro</td>
+          <td>Manuális</td>
+          <td>850W</td>
+          <td>15 bar</td>
+          <td>Hőmérséklet stabil</td>
+          <td>Rozsdamentes acél</td>
+        </tr>
+        <!-- 9. Jura -->
+        <tr>
+          <td>Jura</td>
+          <td>Z8</td>
+          <td>Automata</td>
+          <td>1250W</td>
+          <td>15 bar</td>
+          <td>Érintőképernyő</td>
+          <td>Beépített vízszűrő</td>
+        </tr>
+        <!-- 10. Krups (első sor) -->
+        <tr>
+          <td>Krups</td>
+          <td>EA89</td>
+          <td>Automata</td>
+          <td>1150W</td>
+          <td>15 bar</td>
+          <td>Beépített grinder</td>
+          <td>Automatikus tejhabosító</td>
+        </tr>
+        <!-- 11. Krups (második sor) -->
+        <tr>
+          <td>Krups</td>
+          <td>EA80</td>
+          <td>Automata</td>
+          <td>1100W</td>
+          <td>15 bar</td>
+          <td>Innovatív kivitel</td>
+          <td>Egyszerű karbantartás</td>
+        </tr>
+        <!-- 12. La Marzocco -->
+        <tr>
+          <td>La Marzocco</td>
+          <td>Linea Mini</td>
+          <td>Automata</td>
+          <td>1350W</td>
+          <td>15 bar</td>
+          <td>Professzionális kialakítás</td>
+          <td>Szoftvervezérelt</td>
+        </tr>
+        <!-- 13. La Pavoni -->
+        <tr>
+          <td>La Pavoni</td>
+          <td>Europiccola</td>
+          <td>Manuális</td>
+          <td>850W</td>
+          <td>15 bar</td>
+          <td>Klasszikus design</td>
+          <td>Kézi beállítások</td>
+        </tr>
+        <!-- 14. Melitta -->
+        <tr>
+          <td>Melitta</td>
+          <td>Caffeo</td>
+          <td>Automata</td>
+          <td>1050W</td>
+          <td>15 bar</td>
+          <td>Élménygép</td>
+          <td>Eco mód</td>
+        </tr>
+        <!-- 15. Miele -->
+        <tr>
+          <td>Miele</td>
+          <td>CM 7750</td>
+          <td>Automata</td>
+          <td>1250W</td>
+          <td>15 bar</td>
+          <td>Intelligens adagolás</td>
+          <td>Automata tejhabosító</td>
+        </tr>
+        <!-- 16. Nivona -->
+        <tr>
+          <td>Nivona</td>
+          <td>CafeRomatica</td>
+          <td>Automata</td>
+          <td>1200W</td>
+          <td>15 bar</td>
+          <td>Beépített grinder</td>
+          <td>Intelligens rendszer</td>
+        </tr>
+        <!-- 17. Philips -->
+        <tr>
+          <td>Philips</td>
+          <td>3200 Series</td>
+          <td>Automata</td>
+          <td>1000W</td>
+          <td>15 bar</td>
+          <td>Érintőképernyő</td>
+          <td>LatteCrema technológia</td>
+        </tr>
+        <!-- 18. Rancilio (első sor) -->
+        <tr>
+          <td>Rancilio</td>
+          <td>Silvia</td>
+          <td>Fél-automata</td>
+          <td>1150W</td>
+          <td>15 bar</td>
+          <td>Kerámia őr</td>
+          <td>Manuális gőzölés</td>
+        </tr>
+        <!-- 19. Rancilio (második sor) -->
+        <tr>
+          <td>Rancilio</td>
+          <td>Classe 11</td>
+          <td>Profi</td>
+          <td>1350W</td>
+          <td>15 bar</td>
+          <td>Kereskedelmi kategória</td>
+          <td>Fejlett technológia</td>
+        </tr>
+        <!-- 20. Rocket Espresso -->
+        <tr>
+          <td>Rocket Espresso</td>
+          <td>Appartamento</td>
+          <td>Automata</td>
+          <td>950W</td>
+          <td>9 bar</td>
+          <td>Kompakt kialakítás</td>
+          <td>Prémium anyagok</td>
+        </tr>
+        <!-- 21. Sage -->
+        <tr>
+          <td>Sage</td>
+          <td>Oracle</td>
+          <td>Súper automata</td>
+          <td>1300W</td>
+          <td>15 bar</td>
+          <td>Kettős grinder</td>
+          <td>Automatikus tejhab</td>
+        </tr>
+        <!-- 22. Saeco -->
+        <tr>
+          <td>Saeco</td>
+          <td>Incanto</td>
+          <td>Automata</td>
+          <td>1100W</td>
+          <td>15 bar</td>
+          <td>Kávéprogramok</td>
+          <td>Könnyen tisztítható</td>
+        </tr>
+        <!-- 23. Siemens -->
+        <tr>
+          <td>Siemens</td>
+          <td>EQ.9</td>
+          <td>Automata</td>
+          <td>1100W</td>
+          <td>15 bar</td>
+          <td>PDI technológia</td>
+          <td>Személyre szabható</td>
+        </tr>
+        <!-- 24. Smeg -->
+        <tr>
+          <td>Smeg</td>
+          <td>ECF01</td>
+          <td>Manuális</td>
+          <td>900W</td>
+          <td>15 bar</td>
+          <td>Retro dizájn</td>
+          <td>Kézzel üzemeltetett</td>
+        </tr>
+        <!-- 25. Wega -->
+        <tr>
+          <td>Wega</td>
+          <td>777</td>
+          <td>Automata</td>
+          <td>1200W</td>
+          <td>15 bar</td>
+          <td>Innovatív rendszer</td>
+          <td>Energiahatékony</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <div style="display: flex; justify-content: space-around; align-items: center;">
+    <img src="assets/images/image6.jpg" style="max-width:40%;" alt="Kép 6">
+    <img src="assets/images/image7.jpg" style="max-width:40%;" alt="Kép 7">
+  </div>
+  
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
