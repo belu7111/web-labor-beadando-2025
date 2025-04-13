@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kávé Szervíz - Szervíz Felvétel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+    
+    form div {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Kezdőlap</a></li>
+        <li><a href="rolunk.html">Rólunk</a></li>
+        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+        <li><a href="galeria.html">Galéria</a></li>
+        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <main>
+    <h1 style="text-align: center;">Szervíz Felvétel</h1>
+    <form id="serviceForm" novalidate>
+      <div>
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Telefonszám:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div>
+        <label for="machine">Gép típusa:</label>
+        <input type="text" id="machine" name="machine" required>
+      </div>
+      <div>
+        <label for="description">Hiba leírása:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <button type="submit">Küldés</button>
+    </form>
+  </main>
+  
+  
+  
+  
+  <script>
+    document.getElementById('serviceForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      
+      
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var machine = document.getElementById('machine').value.trim();
+      var description = document.getElementById('description').value.trim();
+      
+     
+      if (!name || !email || !phone || !machine || !description) {
+        alert('Minden mező kitöltése kötelező!');
+        return;
+      }
+      
+      
+      if (name.length < 10) {
+        alert('A Név mezőnek legalább 10 karakter hosszúnak kell lennie!');
+        return;
+      }
+      if (machine.length < 10) {
+        alert('A Gép típusa mezőnek legalább 10 karakter hosszúnak kell lennie!');
+        return;
+      }
+      if (description.length < 10) {
+        alert('A Hiba leírása mezőnek legalább 10 karakter hosszúnak kell lennie!');
+        return;
+      }
+      
+     
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Kérjük, érvényes email címet adjon meg!');
+        return;
+      }
+      
+      
+      alert('Sikeres szervízfelvétel! Köszönjük a jelentkezést.');
+      
+    });
+  </script>
+</body>
+</html>
